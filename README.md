@@ -12,6 +12,7 @@ name = ARGV[0] ||"aoto"
 puts "Hello #{name}!"
 PS C:\Users\aotom\OneDrive\デスクトップ\領域実習\nishitanilab> ruby Hello.rb world
 
+
 Hello world!
 PS C:\Users\aotom\OneDrive\デスクトップ\領域実習\nishitanilab> ruby Hello.rb      
 Hello aoto!
