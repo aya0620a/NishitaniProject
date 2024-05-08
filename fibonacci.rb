@@ -1,20 +1,3 @@
-[0].each do |num|
-  p num
-end
-
-# def fibonacci(n)
-#   if n == 0
-#     return 1
-#   elsif n == 1
-#     return 1
-#   else
-#     return fibonacci(n-1) + fibonacci(n-2)
-#   end
-# end
-
-# (0..10).each do |n|
-#   puts "fibonacci(#{n}) = #{fibonacci(n)}"
-# end
 
 def fibonacci(index)
   if index == 0
@@ -25,9 +8,10 @@ def fibonacci(index)
     return fibonacci(index-1) + fibonacci(index-2)
   end
 end
+puts "index expected actual"
 [[0,1],
  [1,1],
- [2,2],[3,3]
+ [2,2],[3,3],[4,5],[5,8],[6,13],[7,21],[8,34],[9,55],[10,89],[11,144]
 ].each do |index, expected|
   actual = fibonacci(index)
   p [index, expected, actual]
