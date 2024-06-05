@@ -1,5 +1,4 @@
 # d1
-
 ```ruby
 PS C:\Users\aotom\OneDrive\デスクトップ\領域実習\nishitanilab> cat hello.rb
 -> puts "Hello"
@@ -22,13 +21,4 @@ Hello aoto!
 ```ruby
 …o-Surface-Laptop4 /m/c/U/a/D/大/領/nishitanilab (main) [127]  
 explorer.exe http://rubular.com
-```
-
-## Hello.rb
-
-```ruby
-p name = ARGV[0] ||"Aoto Nishi"
-puts "Hello #{name}!"
-p num = ARGV[1].to_f   #型変換
-puts "Hello #{num}!"
 ```

@@ -6,9 +6,7 @@ Dir.glob('*.md').each_with_index do |file, i| #.rbのファイルを取得
   p [file,file.match(/(.+)(.md)/)]
   # if file.match(/(.+)(.md)/) do |e|
 file.match(/(.+)(.md)/) do |e|
-    p [($1+file).downcase, $1]
-    p [($1+file).gsub('md', 'txt'), $1]
-
+    comm = ["cp", file, "#{e[1]}_#{i}_#{file}"].join(" ")
 
 
 =begin
@@ -16,7 +14,7 @@ file.match(/(.+)(.md)/) do |e|
   else
     puts file
 =end
-
+    system(comm)  #コマンドを実行
   end
-  system(comm)  #コマンドを実行
+
 end
